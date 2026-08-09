@@ -109,5 +109,8 @@
     fill="currentColor"
   />
 </symbol>
+        <symbol id="burger-menu-icon" viewBox="0 0 32 32">
+  <path d="M4 8h24M4 16h24M4 24h24" stroke="#2E2F42" stroke-width="2" stroke-linecap="round"/>
+</symbol>
     </defs>
 </svg>
