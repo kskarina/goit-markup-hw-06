@@ -33,11 +33,13 @@
         0 1px 1px 0 #00000024,
         0 1px 3px 0 #0000001f,
         0 2px 1px 0 #00000033;
-    width: 408px;
-    height: 582px;
+
+    width: 288px;
+
+    height: 619px;
     overflow-y: auto;
 
-    padding: 72px 24px 24px;
+    padding: 72px 16px 16px;
 }
 
 .close-buton {
@@ -98,7 +100,7 @@
     gap: 16px;
     margin-bottom: 24px;
 
-    width: 360px;
+    width: 256px;
 }
 
 .text-fields {
@@ -150,7 +152,7 @@
     border-radius: 4px;
     padding: 8px 16px;
 
-    width: 360px;
+    width: 256px;
     height: 120px;
 
     resize: none;
@@ -174,12 +176,12 @@
 }
 
 .input-svg {
-    color: #2e2f42;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus+.input-svg {
-    color: #4d5ae5;
+    fill: #4d5ae5;
 }
 
 .input-svg {
@@ -242,6 +244,7 @@
 .form-button {
     padding: 16px 32px;
     width: 169px;
+    height: 56px;
     margin-left: auto;
     margin-right: auto;
 
@@ -261,4 +264,21 @@
 .form-button:hover,
 .form-button:focus {
     background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+        height: 582px;
+
+        padding: 72px 24px 24px;
+    }
+
+    .fields {
+        width: 360px;
+    }
+
+    .form-textarea {
+        width: 360px;
+    }
 }
