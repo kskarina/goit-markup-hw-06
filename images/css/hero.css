@@ -10,9 +10,11 @@
         background-position: center;
 
         margin: 0 auto;
+
         max-width: 320px;
 
         background-color: #2e2f42;
+
         padding: 72px 0;
     }
 
@@ -21,6 +23,7 @@
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
+
         gap: 72px;
     }
 
@@ -48,6 +51,7 @@
 
     .hero-title {
         font-weight: 700;
+
         font-size: 36px;
         line-height: 1.11;
         text-align: center;
