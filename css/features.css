@@ -58,9 +58,12 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .features-list {
         flex-wrap: nowrap;
+        padding: 120px 0;
+        display: flex;
+        gap: 24px;
     }
 
     .feature-decoration {
@@ -68,8 +71,15 @@
     }
 
     .features-item {
-        flex-basis: calc((100% - 3 * 24px) / 4);
+        width: calc((100% - 72px) / 4);
     }
+
+    .feature-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
 
     .features-subtitle {
         font-weight: 500;

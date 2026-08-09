@@ -79,16 +79,24 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     .team-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        row-gap: 64px;
+        justify-content: center;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
+        max-width: 264px;
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .team-list {
-        flex-wrap: nowrap;
+@media screen and (min-width: 1158px) {
+    .team {
+        padding: 120px 0;
+    }
+
+    .team-item {
+        width: calc((100% - 72px) / 4);
+        max-width: 264px;
     }
 }

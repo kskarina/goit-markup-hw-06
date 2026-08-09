@@ -18,11 +18,10 @@
     }
 
     .container {
-        margin: 0 auto;
-
+        width: 100%;
         max-width: 320px;
-
         padding: 0 16px;
+        margin: 0 auto;
     }
 
     .page-container {
@@ -132,7 +131,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
         padding: 0 15px;
