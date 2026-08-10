@@ -16,7 +16,11 @@
 .footer-left {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    align-self: center;
 }
 
 .footer-section .logo {
@@ -119,7 +123,6 @@
 
 .subscribe-input {
     width: 100%;
-    max-width: 288px;
     height: 40px;
     padding: 8px 16px;
     font-size: 12px;
@@ -187,13 +190,13 @@
         align-items: flex-start;
     }
 
+    .footer-logo {
+        align-self: flex-start;
+    }
+
     .subscribe-input-wrapper {
         flex-direction: row;
         gap: 24px;
-    }
-
-    .subscribe-input {
-        width: 264px;
     }
 }
 
@@ -206,7 +209,7 @@
 
     .footer-section .container {
         flex-wrap: nowrap;
-        column-gap: 80px;
+        column-gap: 120px;
         row-gap: 0;
         padding: 0 15px;
     }
