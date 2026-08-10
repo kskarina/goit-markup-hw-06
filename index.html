@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <title>HW3</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -21,73 +21,59 @@
   </head>
   <body>
     <header id="header" class="header">
-      <div class="container header-container">
+      <div class="container">
+        <a href="./index.html" class="logo"
+          ><span class="web">Web</span>Studio</a
+        >
+
         <nav class="nav">
-          <a href="./index.html" class="logo header-logo">
-            Web<span class="web">>Studio</class=>
-          </a>
-       <ul class="menu-list">
-  <li class="menu-item">
-    <a href="./index.html" class="menu-link current">Studio</a>
-  </li>
-  <li class="menu-item">
-    <a href="#portfolio" class="menu-link">Portfolio</a>
-  </li>
-  <li class="menu-item">
-    <a href="#footer" class="menu-link">Contacts</a>
-  </li>
-</ul>
-</nav>
+          <ul class="menu-list">
+            <li><a href="#features" class="menu-link current">Features</a></li>
+            <li><a href="#team" class="menu-link">Team</a></li>
+            <li><a href="#portfolio" class="menu-link">Portfolio</a></li>
+          </ul>
+        </nav>
 
         <address class="contacts">
-         <ul class="contact-list">
-  <li class="contact-item">
-    <a href="mailto:info@devstudio.com" class="contact-link">
-      info@devstudio.com
-    </a>
-  </li>
-  <li class="contact-item">
-    <a href="tel:+110001111111" class="contact-link">
-      +11 (000) 111-11-11
-    </a>
-  </li>
-</ul>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="contact-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="contact-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
         </address>
 
-       <button
-  class="button-burger js-open-menu"
-  type="button"
-  aria-label="Open mobile menu"
->
-          <svg class="mobile-menu-open-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-menu"></use>
+        <button class="button-burger">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#burger-menu-icon"></use>
           </svg>
         </button>
       </div>
     </header>
-
     <main>
-    
-     <section id="hero" class="hero-section">
+      <section id="hero" class="hero-section section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button" data-modal-open>
-            Order Service
-          </button>
+          <button type="button" class="hero-button">Order Service</button>
         </div>
       </section>
 
-    
-      <section id="features" class="section features-section">
+      <section id="features" class="features-section section">
         <div class="container">
-          <h2 class="features-title visually-hidden">Our features</h2>
+          <h2 class="features-title sr-only">Our Features</h2>
           <ul class="features-list">
             <li class="features-item">
-              <div class="feature-decoration">
-                <svg class="feature-decoration-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-antenna"></use>
+              <span class="feature-decoration">
+                <svg width="64" height="64" class="feature-decoration-icon">
+                  <use href="./images/icons.svg#antena-icon"></use>
                 </svg>
-              </div>
+              </span>
               <h3 class="features-subtitle">Strategy</h3>
               <p class="features-text">
                 Our goal is to identify the business problem to walk away with
@@ -95,11 +81,11 @@
               </p>
             </li>
             <li class="features-item">
-              <div class="feature-decoration">
-                <svg class="feature-decoration-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-clock"></use>
+              <span class="feature-decoration">
+                <svg width="64" height="64" class="feature-decoration-icon">
+                  <use href="./images/icons.svg#clock-icon"></use>
                 </svg>
-              </div>
+              </span>
               <h3 class="features-subtitle">Punctuality</h3>
               <p class="features-text">
                 Bring the key message to the brand's audience for the best price
@@ -107,11 +93,11 @@
               </p>
             </li>
             <li class="features-item">
-              <div class="feature-decoration">
-                <svg class="feature-decoration-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-diagram"></use>
+              <span class="feature-decoration">
+                <svg width="64" height="64" class="feature-decoration-icon">
+                  <use href="./images/icons.svg#diagram-icon"></use>
                 </svg>
-              </div>
+              </span>
               <h3 class="features-subtitle">Diligence</h3>
               <p class="features-text">
                 Research and confirm brands with the strongest digital growth
@@ -119,11 +105,11 @@
               </p>
             </li>
             <li class="features-item">
-              <div class="feature-decoration">
-                <svg class="feature-decoration-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-astronaut"></use>
+              <span class="feature-decoration">
+                <svg width="64" height="64" class="feature-decoration-icon">
+                  <use href="./images/icons.svg#astronaut-icon"></use>
                 </svg>
-              </div>
+              </span>
               <h3 class="features-subtitle">Technologies</h3>
               <p class="features-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -134,16 +120,15 @@
         </div>
       </section>
 
-      <!-- Team Section -->
       <section id="team" class="team-section section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-card">
               <img
+                srcset="./images/team-1@2x.png"
                 src="./images/team-1.jpg"
-                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
-                alt="Mark Guerrero"
+                alt="Product Designer"
                 width="264"
                 height="260"
                 class="team-image"
@@ -158,10 +143,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Instagram"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#instagram-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -171,10 +155,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Twitter"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#twitter-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -184,10 +167,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Facebook"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icons.svg#facebook-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -197,10 +179,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="LinkedIn"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#linkedin-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -209,9 +190,9 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/team-2@2x.png"
                 src="./images/team-2.jpg"
-                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
-                alt="Tom Ford"
+                alt="Frontend Developer"
                 width="264"
                 height="260"
                 class="team-image"
@@ -226,10 +207,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Instagram"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#instagram-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -239,10 +219,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Twitter"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#twitter-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -252,10 +231,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Facebook"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icons.svg#facebook-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -265,10 +243,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="LinkedIn"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#linkedin-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -277,9 +254,9 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/team-3@2x.png"
                 src="./images/team-3.jpg"
-                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
-                alt="Camila Garcia"
+                alt="Marketing"
                 width="264"
                 height="260"
                 class="team-image"
@@ -294,10 +271,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Instagram"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#instagram-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -307,10 +283,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Twitter"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#twitter-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -320,10 +295,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Facebook"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icons.svg#facebook-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -333,10 +307,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="LinkedIn"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#linkedin-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -345,9 +318,9 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/team-4@2x.png"
                 src="./images/team-4.jpg"
-                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
-                alt="Daniel Wilson"
+                alt="UI Designer"
                 width="264"
                 height="260"
                 class="team-image"
@@ -362,10 +335,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Instagram"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                        <use href="./images/icons.svg#instagram-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -375,10 +347,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Twitter"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                        <use href="./images/icons.svg#twitter-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -388,10 +359,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="Facebook"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-facebook"></use>
+                        <use href="./images/icons.svg#facebook-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -401,10 +371,9 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="social-link"
-                      aria-label="LinkedIn"
                     >
                       <svg width="16" height="16" class="social-icon">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
+                        <use href="./images/icons.svg#linkedin-icon"></use>
                       </svg>
                     </a>
                   </li>
@@ -415,19 +384,15 @@
         </div>
       </section>
 
-      <!-- Portfolio Section -->
       <section id="portfolio" class="portfolio-section section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-card">
-              <div class="dynamic-description">
+              <div class="dinamic-description">
                 <img
+                  srcset="./images/Portfolio-1@2x.png"
                   src="./images/portfolio-1.jpg"
-                  srcset="
-                    ./images/portfolio-1.jpg    1x,
-                    ./images/portfolio-1@2x.jpg 2x
-                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -445,13 +410,10 @@
               </div>
             </li>
             <li class="portfolio-card">
-              <div class="dynamic-description">
+              <div class="dinamic-description">
                 <img
+                  srcset="./images/Portfolio-2@2x.png"
                   src="./images/portfolio-2.jpg"
-                  srcset="
-                    ./images/portfolio-2.jpg    1x,
-                    ./images/portfolio-2@2x.jpg 2x
-                  "
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -469,14 +431,11 @@
               </div>
             </li>
             <li class="portfolio-card">
-              <div class="dynamic-description">
+              <div class="dinamic-description">
                 <img
+                  srcset="./images/Portfolio-3@2x.png"
                   src="./images/portfolio-3.jpg"
-                  srcset="
-                    ./images/portfolio-3.jpg    1x,
-                    ./images/portfolio-3@2x.jpg 2x
-                  "
-                  alt="Meditation App"
+                  alt="Cashless Payment"
                   width="360"
                   height="300"
                   class="portfolio-image"
@@ -493,14 +452,11 @@
               </div>
             </li>
             <li class="portfolio-card">
-              <div class="dynamic-description">
+              <div class="dinamic-description">
                 <img
+                  srcset="./images/Portfolio-4@2x.png"
                   src="./images/portfolio-4.jpg"
-                  srcset="
-                    ./images/portfolio-4.jpg    1x,
-                    ./images/portfolio-4@2x.jpg 2x
-                  "
-                  alt="Taxi Service"
+                  alt="Cashless Payment"
                   width="360"
                   height="300"
                   class="portfolio-image"
@@ -517,14 +473,11 @@
               </div>
             </li>
             <li class="portfolio-card">
-              <div class="dynamic-description">
+              <div class="dinamic-description">
                 <img
+                  srcset="./images/Portfolio-5@2x.png"
                   src="./images/portfolio-5.jpg"
-                  srcset="
-                    ./images/portfolio-5.jpg    1x,
-                    ./images/portfolio-5@2x.jpg 2x
-                  "
-                  alt="Screen Illustrations"
+                  alt="Cashless Payment"
                   width="360"
                   height="300"
                   class="portfolio-image"
@@ -541,14 +494,11 @@
               </div>
             </li>
             <li class="portfolio-card">
-              <div class="dynamic-description">
+              <div class="dinamic-description">
                 <img
+                  srcset="./images/Portfolio-6@2x.png"
                   src="./images/portfolio-6.jpg"
-                  srcset="
-                    ./images/portfolio-6.jpg    1x,
-                    ./images/portfolio-6@2x.jpg 2x
-                  "
-                  alt="Online Courses"
+                  alt="Cashless Payment"
                   width="360"
                   height="300"
                   class="portfolio-image"
@@ -568,14 +518,12 @@
         </div>
       </section>
     </main>
-
-  
     <footer id="footer" class="footer-section">
-      <div class="container footer-container">
+      <div class="container">
         <div class="footer-left">
-          <a href="./index.html" class="logo footer-logo">
-  Web<span class="web">Studio</span>
-</a>
+          <a href="./index.html" class="logo"
+            ><span class="web">Web</span>Studio</a
+          >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -585,55 +533,51 @@
         <div class="footer-socials-section">
           <p class="footer-socials-caption">Social media</p>
           <ul class="footer-socials-list">
-            <li class="footer-socials-item">
+            <li>
               <a
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 class="social-link"
-                aria-label="Instagram"
               >
                 <svg width="24" height="24" class="social-icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#instagram-icon"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socials-item">
+            <li>
               <a
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 class="social-link"
-                aria-label="Twitter"
               >
                 <svg width="24" height="24" class="social-icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#twitter-icon"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socials-item">
+            <li>
               <a
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 class="social-link"
-                aria-label="Facebook"
               >
                 <svg width="24" height="24" class="social-icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#facebook-icon"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-socials-item">
+            <li>
               <a
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 class="social-link"
-                aria-label="LinkedIn"
               >
                 <svg width="24" height="24" class="social-icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
+                  <use href="./images/icons.svg#linkedin-icon"></use>
                 </svg>
               </a>
             </li>
@@ -641,43 +585,35 @@
         </div>
 
         <div class="footer-subscribe-section">
-  <div class="subscribe-form-wrapper">
-    <p class="subscribe-caption">Subscribe</p>
-    <form class="subscribe-form">
-      <div class="subscribe-input-wrapper">
-        <label class="subscribe-label" for="footer-user-email">
-          <input
-            type="email"
-            name="user-email"
-            id="footer-user-email"
-            placeholder="E-mail"
-            class="subscribe-input"
-            required
-          />
-        </label>
-        <button class="subscribe-button" type="submit">
-          Subscribe
-          <svg class="subscribe-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-send"></use>
-          </svg>
-        </button>
-      </div>
-    </form>
-  </div>
-</div>
-    </footer>
+          <div class="subscribe-form-wrapper">
+            <p class="subscribe-caption">Subscribe</p>
+            <form class="subscribe-form">
+              <div class="subscribe-input-wrapper">
+                <input
+                  type="email"
+                  name="user-email"
+                  id="footer-user-email"
+                  placeholder="E-mail"
+                  class="subscribe-input"
+                />
 
-   
-    <div id="modal" class="backdrop" data-modal>
+                <button class="subscribe-button" type="submit">
+                  Subscribe
+                  <svg class="subscribe-icon" width="24" height="24">
+                    <use href="./images/icons.svg#send-icon"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="modal" class="backdrop">
       <div class="modal">
-        <button
-          class="close-button"
-          type="button"
-          data-modal-close
-          aria-label="Close modal"
-        >
+        <button class="close-buton" type="button">
           <svg class="close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
+            <use href="./images/icons.svg#close-icon"></use>
           </svg>
         </button>
 
@@ -685,82 +621,81 @@
 
         <form class="form">
           <div class="fields">
-            <div class="form-field">
-              <label class="form-label" for="user-name">Name</label>
-              <div class="input-wrapper">
-                <input
-                  class="form-input"
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                  required
-                />
-                <svg class="input-svg" width="18" height="24">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
+            <div class="text-fields">
+              <div class="form-field">
+                <label class="form-label" for="user-name">Name</label>
+                <div class="input-wrapper">
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    required
+                  />
+                  <svg class="input-svg" width="18" height="24">
+                    <use href="./images/icons.svg#person-icon"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="user-phone">Phone</label>
+                <div class="input-wrapper">
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="user-phone"
+                    id="user-phone"
+                    required
+                  />
+                  <svg class="input-svg" width="18" height="24">
+                    <use href="./images/icons.svg#phone-icon"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="user-email">Email</label>
+                <div class="input-wrapper">
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    required
+                  />
+                  <svg class="input-svg" width="18" height="24">
+                    <use href="./images/icons.svg#email-icon"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="comment">Comment</label>
+                <textarea
+                  class="form-textarea"
+                  name="comment"
+                  id="comment"
+                  placeholder="Text input"
+                ></textarea>
               </div>
             </div>
 
             <div class="form-field">
-              <label class="form-label" for="user-phone">Phone</label>
-              <div class="input-wrapper">
-                <input
-                  class="form-input"
-                  type="tel"
-                  name="user-phone"
-                  id="user-phone"
-                  required
-                />
-                <svg class="input-svg" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="form-field">
-              <label class="form-label" for="user-email">Email</label>
-              <div class="input-wrapper">
-                <input
-                  class="form-input"
-                  type="email"
-                  name="user-email"
-                  id="user-email"
-                  required
-                />
-                <svg class="input-svg" width="18" height="24">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="form-field">
-              <label class="form-label" for="comment">Comment</label>
-              <textarea
-                class="form-textarea"
-                name="comment"
-                id="comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-
-            <div class="form-field privacy-field">
               <input
-                class="original-checkbox visually-hidden"
+                class="original-checkbox sr-only"
                 type="checkbox"
                 name="privacy-policy"
                 id="privacy-policy"
-                value="true"
                 required
               />
               <label class="privacy-policy-label" for="privacy-policy">
                 <span class="custom-checkbox">
                   <svg class="custom-checkbox-icon" width="10" height="8">
-                    <use href="./images/icons.svg#icon-check"></use>
+                    <use href="./images/icons.svg#check-mark-icon"></use>
                   </svg>
                 </span>
                 <span class="privacy-policy-text">
                   I accept the terms and conditions of the
-                  <a class="privacy-policy-link" href="#">Privacy Policy</a>
+
+                  <a class="privacy-policy-link" href="">Privacy Policy</a>
                 </span>
               </label>
             </div>
@@ -770,101 +705,86 @@
         </form>
       </div>
     </div>
-
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu js-menu-container" id="mobile-menu">
-      <button
-        class="close-button js-close-menu"
-        type="button"
-        aria-label="Close mobile menu"
-      >
+    <div id="mobile-menu" class="mobile-menu">
+      <button class="close-buton" type="button">
         <svg class="close-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
+          <use href="./images/icons.svg#close-icon"></use>
         </svg>
       </button>
 
       <nav class="mobile-nav">
-        <ul class="mobile-menu-list">
-          <li>
-            <a href="./index.html" class="mobile-menu-link current">Studio</a>
-          </li>
-          <li><a href="#portfolio" class="mobile-menu-link">Portfolio</a></li>
-          <li><a href="#footer" class="mobile-menu-link">Contacts</a></li>
+        <ul class="menu-list mobile-menu-list">
+          <li><a href="#features" class="menu-link current">Features</a></li>
+          <li><a href="#team" class="menu-link">Team</a></li>
+          <li><a href="#portfolio" class="menu-link">Portfolio</a></li>
         </ul>
       </nav>
-
-      <div class="mobile-menu-bottom">
+      <div class="bottom">
         <address class="mobile-contacts">
           <ul class="mobile-contact-list">
-            <li class="mobile-contact-item">
-              <a
-                href="tel:+110001111111"
-                class="mobile-contact-link accent-link"
-              >
-                +11 (000) 111-11-11
-              </a>
-            </li>
-            <li class="mobile-contact-item">
+            <li>
               <a
                 href="mailto:info@devstudio.com"
-                class="mobile-contact-link email-link"
+                class="contact-link mobile-contact-link"
+                >info@devstudio.com</a
               >
-                info@devstudio.com
-              </a>
+            </li>
+            <li>
+              <a
+                href="tel:+110001111111"
+                class="contact-link mobile-contact-link current"
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
         </address>
 
-        <ul class="mobile-socials">
-          <li class="mobile-socials-item">
+        <ul class="team-socials mobile-socials">
+          <li>
             <a
               href="#"
               target="_blank"
               rel="noopener noreferrer nofollow"
               class="social-link"
-              aria-label="Instagram"
             >
-              <svg width="24" height="24" class="social-icon">
-                <use href="./images/icons.svg#icon-instagram"></use>
+              <svg width="16" height="16" class="social-icon">
+                <use href="./images/icons.svg#instagram-icon"></use>
               </svg>
             </a>
           </li>
-          <li class="mobile-socials-item">
+          <li>
             <a
               href="#"
               target="_blank"
               rel="noopener noreferrer nofollow"
               class="social-link"
-              aria-label="Twitter"
             >
-              <svg width="24" height="24" class="social-icon">
-                <use href="./images/icons.svg#icon-twitter"></use>
+              <svg width="16" height="16" class="social-icon">
+                <use href="./images/icons.svg#twitter-icon"></use>
               </svg>
             </a>
           </li>
-          <li class="mobile-socials-item">
+          <li>
             <a
               href="#"
               target="_blank"
               rel="noopener noreferrer nofollow"
               class="social-link"
-              aria-label="Facebook"
             >
-              <svg width="24" height="24" class="social-icon">
-                <use href="./images/icons.svg#icon-facebook"></use>
+              <svg width="16" height="16" class="social-icon">
+                <use href="./images/icons.svg#facebook-icon"></use>
               </svg>
             </a>
           </li>
-          <li class="mobile-socials-item">
+          <li>
             <a
               href="#"
               target="_blank"
               rel="noopener noreferrer nofollow"
               class="social-link"
-              aria-label="LinkedIn"
             >
-              <svg width="24" height="24" class="social-icon">
-                <use href="./images/icons.svg#icon-linkedin"></use>
+              <svg width="16" height="16" class="social-icon">
+                <use href="./images/icons.svg#linkedin-icon"></use>
               </svg>
             </a>
           </li>
