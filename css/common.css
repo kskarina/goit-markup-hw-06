@@ -29,7 +29,6 @@
         flex-direction: column;
     }
 
-
     .main-container {
         flex-grow: 1;
     }
@@ -48,6 +47,13 @@
     }
 
     h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2e2f42;
         margin: 0;
     }
 
@@ -82,15 +88,15 @@
         font-family: inherit;
         color: inherit;
         cursor: pointer;
-
         padding: 0;
-
         background-color: transparent;
         line-height: 0;
     }
 
     img {
         display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     .sr-only {
@@ -123,11 +129,6 @@
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-    }
-
-    h1 {
-        max-width: 1158px;
-        padding: 0 15px;
     }
 }
 

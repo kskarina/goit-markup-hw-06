@@ -1,7 +1,6 @@
 @media screen {
     .mobile-menu {
         background-color: #fff;
-
         position: fixed;
         top: 0;
         left: 0;
@@ -11,15 +10,15 @@
 
         display: flex;
         justify-content: space-between;
-        align-items: start;
-
+        align-items: flex-start;
         flex-direction: column;
 
         opacity: 0;
         pointer-events: none;
         visibility: hidden;
 
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         padding: 72px 16px 40px;
     }
@@ -30,35 +29,79 @@
         visibility: visible;
     }
 
+
+    .mobile-menu-close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e7e9fc;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
     .mobile-menu-list {
         display: flex;
         flex-direction: column;
         gap: 40px;
-
         font-weight: 700;
         font-size: 36px;
-        line-height: 1.11111;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
     }
 
-    .mobile-contacts .current {
-        color: #4d5ae5;
+    .mobile-menu-link {
+        color: #2e2f42;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .mobile-contact-list {
-        gap: 24px;
+    .mobile-menu-link.current,
+    .mobile-menu-link:hover,
+    .mobile-menu-link:focus {
+        color: #404bbf;
+    }
 
+    /* Контакти */
+    .mobile-contacts {
         margin-bottom: 48px;
     }
 
-    .mobile-contact-link {
-        padding: 12px 0;
+    .mobile-contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
+
+
+    .mobile-contact-link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #4d5ae5;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    .mobile-contact-link.email-link {
+        color: #434455;
+    }
+
 
     .mobile-socials {
         display: flex;
         gap: 40px;
-
-        width: 288px;
+        width: 100%;
+        max-width: 288px;
     }
 }
 
