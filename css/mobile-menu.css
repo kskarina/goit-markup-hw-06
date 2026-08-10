@@ -46,6 +46,10 @@
         line-height: 1.11111;
     }
 
+    .mobile-contacts {
+        font-style: normal;
+    }
+
     .mobile-contacts .current {
         color: #4d5ae5;
     }
@@ -62,6 +66,7 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
+        letter-spacing: 0.02em;
     }
 
     .mobile-email-link {
@@ -70,6 +75,7 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
+        letter-spacing: 0.02em;
     }
 
     .mobile-socials {
