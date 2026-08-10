@@ -29,21 +29,17 @@
         flex-direction: column;
     }
 
-
     .main-container {
         flex-grow: 1;
     }
 
     .section {
-
         padding: 96px 0;
     }
 
     h1 {
         font-weight: 700;
-
         font-size: 36px;
-
         line-height: 1.11;
         text-align: center;
         color: #fff;
@@ -80,18 +76,12 @@
         font-style: normal;
     }
 
-    .mobile-email-link {
-        color: #434455;
-    }
-
     button {
         border: none;
         font-family: inherit;
         color: inherit;
         cursor: pointer;
-
         padding: 0;
-
         background-color: transparent;
         line-height: 0;
     }
@@ -113,8 +103,6 @@
         margin: -1px;
     }
 }
-
-
 
 @media screen and (min-width: 768px) {
     .container {
